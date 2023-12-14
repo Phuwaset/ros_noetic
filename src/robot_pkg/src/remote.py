@@ -12,6 +12,9 @@ frame.geometry("200x200")
 rospy.init_node("GUI_Remote")
 pub = rospy.Publisher("turtle1/cmd_vel",Twist, queue_size=10)
 
+# Can you Control Velocity of Robot Any You can. But Can control witch Twist_ cmd  Public to Sub cmd_vel for Robot;
+pub = rospy.Publisher("articubot_one/cmd_vel",Twist)
+
 
 def fw():
     print("fw")
